@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".accordion li:first-child").addClass("is-show"),$(".accordion li").on("click",function(){$(".accordion li").removeClass("is-show"),$(this).addClass("is-show")})});
