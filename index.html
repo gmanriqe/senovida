@@ -11,39 +11,54 @@
 <title>Senovida</title>
 </head>
 <body>
-<!-- <header class="main-h-header" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 10;">
+<div class="main-menu-mobile">
 <div class="container">
-<div class="h-header">
-<nav class="navbar navbar-expand-lg navbar-light">
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<a class="navbar-brand" href="#"><img src="img/logo_senovida.svg" alt="Senovida"></a>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav mr-auto">
-<li class="nav-item">
-<a class="nav-link" href="#">¿Qué es Senovida?</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Conoce más sobre el cáncer de mama</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Aprende a prevenir el cancer de mama</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Preguntas frecuentes</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#"><img src="img/logo_fundacion_peruana_de_cancer.svg" alt="Fundación Peruana de Cancer"></a>
-</li>
+<nav class="menu-mobile">
+<ul>
+<li><a href="#queEs" class="active">¿Que es Senovida?</a></li>
+<li><a href="#conoceMas">Conoce más sobre el cancer de mama</a></li>
+<li><a href="#aprendePrevenir">Aprende a prevenir el cancer de mama</a></li>
+<li><a href="#preguntasFrecuentes">Preguntas frecuentes</a></li>
 </ul>
-</div>
 </nav>
 </div>
 </div>
-</header> -->
+<div class="main-h-header-mobile d-lg-none">
+<div class="container">
+<div class="h-header-mobile">
+<div class="h-header-mobile__hamburguer">
+<div class="menu-animate">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<ul>
+<li><figure><img src="img/logo_senovida.svg" alt="Senovida"></figure></li>
+<li><a href="https://fpc.pe/" target="blank"><figure><img src="img/logo_color_fundacion_peruana_de_cancer.svg" alt="Fundación Peruana de Cancer"></figure></a></li>
+</ul>
+</div>
+</div>
+</div>
+<header class="main-h-header d-none d-lg-block">
+<div class="container">
+<div class="h-header">
+<figure class="h-header__logo">
+<img src="img/logo_senovida.svg" alt="Senovida">
+</figure>
+<ul class="h-header__menu">
+<li><a href="#queEs" class="active">¿Que es Senovida?</a></li>
+<li><a href="#conoceMas">Conoce más sobre el <br> cancer de mama</a></li>
+<li><a href="#aprendePrevenir">Aprende a prevenir <br> el cancer de mama</a></li>
+<li><a href="#preguntasFrecuentes">Preguntas frecuentes</a></li>
+<li><a href="https://fpc.pe/" target="_blank"><figure><img src="img/logo_color_fundacion_peruana_de_cancer.svg" alt="Fundación Peruana de Cancer"></figure></a></li>
+</ul>
+</div>
+</div>
+</header>
 <main>
-<section class="main-h-first-section">
+<section id="queEs" class="main-h-first-section">
 <section class="main-h-banner">
 <div class="squad"></div>
 <div class="container">
@@ -60,7 +75,18 @@
 </div>
 </div>
 </section>
-<section class="main-h-know-more-about">
+<section class="main-h-banner-content d-lg-none">
+<div class="container">
+<div class="h-banner-content">
+<p>SENOVIDA es un programa educativo que te ayudará a comprender la importancia de la Educación Preventiva y el Diagnóstico temprano del cáncer de mama.</p>
+<p>Ahora tú puedes hacer la diferencia y ayudar a que menos personas mueran por falta de información.</p>
+<div>
+<button>¡Recuerda que la Educación Preventiva puede salvar vidas!</button>
+</div>
+</div>
+</div>
+</section>
+<section id="conoceMas" class="main-h-know-more-about">
 <div class="container">
 <h3 class="bg-title-left">
 <span><em>CONOCE MÁS SOBRE EL</em></span>
@@ -198,7 +224,7 @@
 </div>
 </div>
 </section>
-<section class="main-h-alarm-signals">
+<section id="aprendePrevenir" class="main-h-alarm-signals">
 <div class="container">
 <div class="h-alarm-signals">
 <div class="h-alarm-signals__top">
@@ -292,11 +318,12 @@
 <div class="container">
 <div class="h-video">
 <div class="h-video__play">
-<div class="play">
-<a href="#">
+<figure class="play">
+<img src="img/video_autoexamen.png" alt="Autoexamen de mama">
+<a href="">
 <i class="fas fa-play"></i>
 </a>
-</div>
+</figure>
 </div>
 <p><span>AUTOEXAMEN DE</span> MAMA</p>
 </div>
@@ -402,7 +429,7 @@
 </div>
 </div>
 </section>
-<section class="main-h-frequent-questions">
+<section id="preguntasFrecuentes"  class="main-h-frequent-questions">
 <div class="container">
 <div class="h-frequent-questions">
 <div class="title">
@@ -496,7 +523,7 @@
 </footer>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="js/app.js"></script>
